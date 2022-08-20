@@ -1,0 +1,13 @@
+{
+  "name": "easyhttp",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:listen": "nodemon tests/listen.js"
+  },
+  "dependencies": {
+    "events": "^3.3.0",
+    "http": "^0.0.1-security"
+  }
+}
