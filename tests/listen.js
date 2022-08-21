@@ -1,7 +1,7 @@
 'use strict';
 
 const { Server } = require('../easyhttp');
-const server = new Server(true)
+const server = new Server()
 
 server.route(
     'GET', '/',
