@@ -13,9 +13,8 @@ class Server extends Emitter {
     /**
      * @param {Boolean} debug Recieve logs from easyhttp to help with debugging code, default false
      */
-    constructor(debug) {
+    constructor() {
         super();
-        this.debug = debug || false;
         this.routes = [];
     }
 
@@ -78,7 +77,6 @@ class Server extends Emitter {
 
         }).listen(port);
         
-        if(this.debug) server.on('listening', () => process.stdout.write(`[DEBUG] Listening on ${port}\n`));
         if(callback) server.on('listening', callback);
     }
 }
