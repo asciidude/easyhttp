@@ -10,9 +10,6 @@ const Emitter = require('events');
 
 // Class //
 class Server extends Emitter {
-    /**
-     * @param {Boolean} debug Recieve logs from easyhttp to help with debugging code, default false
-     */
     constructor() {
         super();
         this.routes = [];
